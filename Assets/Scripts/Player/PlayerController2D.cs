@@ -39,7 +39,7 @@ public class PlayerController2D : MonoBehaviour
 
     void Interact()
     {
-        Debug.Log("Interacted with object!");
+        //Debug.Log("Interacted with object!");
         // You can implement raycast or trigger logic here for interaction
     }
 }
