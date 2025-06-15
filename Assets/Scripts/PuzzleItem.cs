@@ -6,9 +6,23 @@ public class PuzzleItem : MonoBehaviour
 {
     public string itemID;
     public KeyCode interactKey = KeyCode.E;
-    public bool isPickup = true; // True when collectible, false when placing
+    public bool isPickup = true;
 
     private bool playerInRange = false;
+
+    [Header("Audio")]
+    public AudioClip pickupSound;
+    public AudioClip placeSound;
+    private AudioSource audioSource;
+
+    void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+    }
 
     void Update()
     {
@@ -17,26 +31,37 @@ public class PuzzleItem : MonoBehaviour
             if (isPickup)
             {
                 InventoryManager.Instance.AddItem(itemID);
-                gameObject.SetActive(false); // Hide from scene
+                StartCoroutine(PlayPickupAndDeactivate());
             }
             else
             {
                 if (InventoryManager.Instance.HasItem(itemID))
                 {
                     InventoryManager.Instance.RemoveItem(itemID);
-                    gameObject.SetActive(true); // Place back in world
+                    gameObject.SetActive(true);
+                    PlaySound(placeSound);
 
-                    // Set alpha to 255 (1f in float range)
+                    // Reset sprite alpha to fully visible
                     SpriteRenderer sr = GetComponent<SpriteRenderer>();
                     if (sr != null)
                     {
                         Color c = sr.color;
-                        c.a = 1f; // 255 in float is 1.0
+                        c.a = 1f;
                         sr.color = c;
                     }
                 }
             }
         }
+    }
+
+    IEnumerator PlayPickupAndDeactivate()
+    {
+        PlaySound(pickupSound);
+        if (pickupSound != null)
+        {
+            yield return new WaitForSeconds(pickupSound.length);
+        }
+        gameObject.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -49,5 +74,13 @@ public class PuzzleItem : MonoBehaviour
     {
         if (other.CompareTag("Player"))
             playerInRange = false;
+    }
+
+    void PlaySound(AudioClip clip)
+    {
+        if (clip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
     }
 }

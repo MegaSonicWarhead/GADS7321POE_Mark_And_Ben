@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Puzzle piece_0: 2018223832411624295
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
