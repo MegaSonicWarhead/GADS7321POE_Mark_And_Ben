@@ -10,6 +10,8 @@ public class PuzzleItem : MonoBehaviour
 
     private bool playerInRange = false;
 
+    public string puzzleID;
+
     [Header("Audio")]
     public AudioClip pickupSound;
     public AudioClip placeSound;
@@ -28,6 +30,9 @@ public class PuzzleItem : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(interactKey))
         {
+            if (!PuzzleManager.Instance.IsItemInActiveVariant(puzzleID, itemID))
+                return;
+
             if (isPickup)
             {
                 InventoryManager.Instance.AddItem(itemID);
