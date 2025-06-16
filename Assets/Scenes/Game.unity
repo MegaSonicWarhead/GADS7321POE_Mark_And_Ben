@@ -2706,7 +2706,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb37e0d9b383b6f4684123548e373378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allPuzzles: []
+  allPuzzles:
+  - puzzleID: Fields
+    variants:
+    - variantID: Fieldpzl 1 divided
+      slots:
+      - itemID: fields 1 - 1
+        imageSlot: {fileID: 0}
+      - itemID: 
+        imageSlot: {fileID: 0}
+      - itemID: 
+        imageSlot: {fileID: 0}
+      - itemID: 
+        imageSlot: {fileID: 0}
+    - variantID: Fieldpzl Variant divided
+      slots:
+      - itemID: 
+        imageSlot: {fileID: 0}
+      - itemID: 
+        imageSlot: {fileID: 0}
+    activeVariant:
+      variantID: 
+      slots: []
+  - puzzleID: beach
+    variants:
+    - variantID: beachpzl 1 divided
+      slots: []
+    - variantID: Beachpzl variant divided
+      slots: []
+    activeVariant:
+      variantID: 
+      slots: []
 --- !u!4 &1837358351
 Transform:
   m_ObjectHideFlags: 0
