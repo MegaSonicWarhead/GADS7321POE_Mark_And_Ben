@@ -9,14 +9,14 @@ public class Pieces : MonoBehaviour
 
     void Start()
     {
-        Updateisibility();
+        UpdateVisibility();
     }
 
 
     public void UpdateVisibility()
     {
         bool IsActive = PuzzleManager.Instance != null &&
-                PuzzleManager.Instance.IsItemInActiveVariant(PuzzleID, itemID);
+                PuzzleManager.Instance.IsItemInActiveVariant(puzzleID, ItemID);
         gameObject.SetActive(IsActive);
     }
 

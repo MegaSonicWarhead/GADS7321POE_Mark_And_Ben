@@ -34,7 +34,7 @@ public class PuzzleCollect : MonoBehaviour
             bool PiecePickedUp = InventoryManager.Instance.HasItem(slot.itemID);
 
             var color = slot.imageSlot.color;
-            color.a = hasPiece ? 1f : 0f;
+            color.a = PiecePickedUp ? 1f : 0f;
             slot.imageSlot.color = color;
 
             Sprite puzzleSprite = InventoryManager.Instance.GetSpriteForItem(slot.itemID);
