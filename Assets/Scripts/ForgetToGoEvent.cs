@@ -85,20 +85,20 @@ public class ForgetToGoEvent : MonoBehaviour
         }
     }
 
-    void OnGUI()
-    {
-        if (GUI.Button(new Rect(10, 10, 180, 30), "Play Sad Sound (Test)"))
-        {
-            if (sadSound != null)
-            {
-                audioSource.PlayOneShot(sadSound);
-                Debug.Log("Manual test: Played sad sound.");
-            }
-            else
-            {
-                Debug.LogWarning("Manual test: Missing sad sound.");
-            }
-        }
-    }
+    //void OnGUI()
+    //{
+    //    if (GUI.Button(new Rect(10, 10, 180, 30), "Play Sad Sound (Test)"))
+    //    {
+    //        if (sadSound != null)
+    //        {
+    //            audioSource.PlayOneShot(sadSound);
+    //            Debug.Log("Manual test: Played sad sound.");
+    //        }
+    //        else
+    //        {
+    //            Debug.LogWarning("Manual test: Missing sad sound.");
+    //        }
+    //    }
+    //}
 
 }
