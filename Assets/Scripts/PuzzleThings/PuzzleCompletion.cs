@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.WSA;
+
 
 public class PuzzleCompletion : MonoBehaviour
 {

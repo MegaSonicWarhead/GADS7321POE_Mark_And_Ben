@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -20, y: 110}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &372206874
@@ -180,13 +180,29 @@ MonoBehaviour:
     the level.
 
 
+    you can move with WASD or the arrow keys, interact with puzzle
+    pieces with E to pick them up.
 
-    Edward Awoke, ready for another day of the typical, a fever
-    dream of finding his own memories and remembering them, it was always one or
-    the other, the oak tree on the hill with the smell of his wife''s perfume or
-    his children laughing or fighting in the background. he just assumed that now
-    it was time to find them all over again.... Typical day in the life of an alzheimers
-    patient....'
+
+    you can find your puzzle progress by clicking
+    the pause button in the top left and then going to puzzles and you will then
+    see your progress.
+
+
+    Once all Puzzle pieces are collected you must go back
+    to the centre of the game level to end.
+
+
+    thank you for playing.
+
+
+
+    Edward
+    Awoke, ready for another day of the typical, a fever dream of finding his own
+    memories and remembering them, it was always one or the other, the oak tree on
+    the hill with the smell of his wife''s perfume or his children laughing or fighting
+    in the background. he just assumed that now it was time to find them all over
+    again.... Typical day in the life of an alzheimers patient....'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
