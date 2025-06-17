@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fog of war spotlight_0: -6268763708955046214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

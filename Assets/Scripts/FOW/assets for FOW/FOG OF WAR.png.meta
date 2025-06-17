@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FOG OF WAR_0: -1898969369336178898
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
