@@ -30,8 +30,7 @@ public class PuzzleItem : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(interactKey))
         {
-            if (!PuzzleManager.Instance.IsItemInActiveVariant(puzzleID, itemID))
-                return;
+            
 
             if (isPickup)
             {

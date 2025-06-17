@@ -37,6 +37,12 @@ public class InventoryManager : MonoBehaviour
         inventory.Add(itemID);
         Debug.Log("Item added: " + itemID);
         FindObjectOfType<InventoryUI>()?.UpdateDisplay();
+
+        PuzzleUI puzzleUI = FindObjectOfType<PuzzleUI>();
+        if (puzzleUI != null)
+        {
+            puzzleUI.UpdatePuzzleUI(); 
+        }
     }
 
     public void RemoveItem(string itemID)

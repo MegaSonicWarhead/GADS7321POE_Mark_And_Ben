@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fa3d1439e75dd4c43844e3d36ea9b74f
+guid: d2b0e1891981af041bd5fa18d1aa372a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 240377371219502968
-    second: fields 1 - 2_0
+      213: -1898969369336178898
+    second: FOG OF WAR_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fields 1 - 2_0
+      name: FOG OF WAR_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 770
-        height: 634
+        width: 616
+        height: 335
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 877a49f02fdf55300800000000000000
-      internalID: 240377371219502968
+      spriteID: e279e557b6185a5e0800000000000000
+      internalID: -1898969369336178898
       vertices: []
       indices: 
       edges: []
@@ -130,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      fields 1 - 2_0: 240377371219502968
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
