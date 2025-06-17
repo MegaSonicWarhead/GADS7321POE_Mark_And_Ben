@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class StartGameButton : MonoBehaviour
 {
-    public string gameSceneName = "Game"; // Set this in the Inspector
+    
 
     public void StartGame()
     {
-        SceneManager.LoadScene(gameSceneName);
+        SceneManager.LoadScene("Info scene");
     }
 }
